@@ -74,12 +74,12 @@ function TodoApp() {
         <Button variant="primary" type="submit" id="addbotton">
           Add
         </Button>
-        {submissionStatus === "false" && (
-          <Alert variant="danger" className="mt-3">
-            Please enter Task
-          </Alert>
-        )}
       </Form>
+      {submissionStatus === "false" && (
+        <Alert variant="danger" className="mt-3">
+          Please enter Task
+        </Alert>
+      )}
       <ListGroup>
         {todos.map((todo, index) => (
           <ListGroup.Item key={index} className="list-items">
